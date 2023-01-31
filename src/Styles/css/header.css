@@ -1,0 +1,101 @@
+.header {
+  padding: 1.8rem 8rem;
+  justify-content: space-between;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  background: #fff;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.logo h1 {
+  font-size: 2.8rem;
+  color: #3563E9;
+}
+
+.categories a {
+  font-size: 1.3rem;
+  color: #596780;
+  padding: 0.5rem 0.7rem;
+  border-radius: 8px;
+  margin: 0 1.2rem;
+}
+.categories a:hover {
+  background: #eee;
+}
+
+.cart a svg {
+  font-size: 2rem;
+  color: #596780;
+  background: #eee;
+  width: 3rem;
+  height: 3rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.menu svg {
+  font-size: 3rem;
+  color: #596780;
+  cursor: pointer;
+  display: none;
+}
+
+.close {
+  width: 100%;
+  text-align: right;
+  display: none;
+}
+.close svg {
+  font-size: 3rem;
+  color: #596780;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+@media screen and (max-width: 930px) {
+  .header {
+    padding: 1.8rem 4rem;
+  }
+  .cart {
+    display: none;
+    visibility: hidden;
+  }
+  .menu svg {
+    display: inline;
+  }
+  .categories {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
+    left: -100%;
+    top: 0;
+    height: 100vh;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 0;
+  }
+  .categories .close {
+    display: inline;
+  }
+  .categories .side-categories {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    height: 100%;
+    width: 25rem;
+    padding: 2rem;
+    gap: 1rem;
+  }
+  .categories a {
+    padding: 1rem;
+    background-color: #fff;
+    margin: 0;
+  }
+  .categories.side {
+    left: 0;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */

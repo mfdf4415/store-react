@@ -9,6 +9,8 @@
   transition: all ease-in-out .3s;
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 63.5%;
+  text-decoration: none;
+  list-style: none;
 }
 
 .flex {

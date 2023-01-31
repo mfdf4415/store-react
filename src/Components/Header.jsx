@@ -1,23 +1,37 @@
+import "../Styles/css/header.css";
 import { Link } from "react-router-dom";
-import { FaShoppingCart } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
+import { BiX, BiMenu } from "react-icons/bi";
+import { useState } from "react";
 
 const Header = () => {
+  const [sideNav, setSideNav] = useState(false);
+
   return (
     <header className="header flex">
       <div className="logo">
-        <h1>KURDSHOP</h1>
+        <h1>7AMAClass</h1>
       </div>
-      <div className="categories">
-        <Link>Clothes</Link>
-        <Link>Shoes</Link>
-        <Link>Electronics</Link>
-        <Link>Nombre</Link>
-        <Link>Others</Link>
-      </div>
+      <nav className={`categories flex ${sideNav && "side"}`}>
+        <div className="side-categories">
+          <div className="close">
+            <BiX onClick={() => setSideNav(false)} />
+          </div>
+          <Link to="/">Clothes</Link>
+          <Link to="/">Shoes</Link>
+          <Link to="/">Electronics</Link>
+          <Link to="/">Nombre</Link>
+          <Link to="/">Others</Link>
+          {sideNav && <Link to="/">acount</Link>}
+        </div>
+      </nav>
       <div className="cart">
-        <Link>
-          <FaShoppingCart />
+        <Link to="/">
+          <FaUser />
         </Link>
+      </div>
+      <div className="menu">
+        <BiMenu onClick={() => setSideNav(true)} />
       </div>
     </header>
   );
