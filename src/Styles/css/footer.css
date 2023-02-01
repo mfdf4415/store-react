@@ -1,0 +1,75 @@
+.footer {
+  flex-direction: column;
+  padding: 8rem 4rem;
+  gap: 5rem;
+}
+.footer hr {
+  width: 100%;
+  background: rgba(19, 19, 19, 0.16);
+  height: 0.1rem;
+}
+
+.top-footer {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5rem;
+  flex-wrap: wrap;
+}
+
+.footer-logo {
+  flex: 1 1 30rem;
+}
+.footer-logo h1 {
+  font-size: 2.8rem;
+  color: #3563E9;
+  margin-bottom: 2rem;
+}
+.footer-logo p {
+  font-size: 1.3rem;
+  color: rgba(19, 19, 19, 0.6);
+  line-height: 150%;
+}
+
+.footer-links {
+  flex: 1 1 50rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.footer-links-item {
+  flex: 1 1 12rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.5rem;
+}
+.footer-links-item h3 {
+  color: #1A202C;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.footer-links-item a {
+  color: rgba(19, 19, 19, 0.6);
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.bottom-footer {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.bottom-footer div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5rem;
+}
+.bottom-footer div a {
+  color: #1A202C;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=footer.css.map */
