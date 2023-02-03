@@ -1,0 +1,80 @@
+@import "./variables.scss";
+
+.bunner {
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.ads {
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    div {
+        position: relative;
+        padding: 4rem 3rem;
+        width: 100%;
+        border-radius: 10px;
+        height: 36rem;
+        flex: 1 1 40rem;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 2rem;
+        overflow: hidden;
+    }
+
+    div {
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #fff;
+            line-height: 150%;
+        }
+
+        p {
+            font-size: 1.4rem;
+            color: #fff;
+            font-weight: 600;
+            line-height: 150%
+        }
+
+        button {
+            @include button;
+        }
+
+        img {
+            width: 30rem;
+            position: absolute;
+        }
+    }
+
+    div:first-child {
+        background-image: repeating-radial-gradient(circle at 0 0, transparent 0, rgba(255, 255, 255, 0.09) 46px), repeating-linear-gradient(#54a6ff, #54a6ff);
+        background-color: rgba(255, 255, 255, 0.09);
+
+        img {
+            top: 5rem;
+            right: 3rem;
+        }
+
+    }
+
+    div:last-child {
+        background: 
+        linear-gradient(135deg,#0000 20.5%,#54a6ff 0 29.5%,#0000 0) 0 50px,
+        linear-gradient( 45deg,#0000 8%,#54a6ff 0 17%, #0000 0 58%) 100px 0,
+        linear-gradient(135deg,#0000 8%,#54a6ff 0 17%, #0000 0 58%,#54a6ff 0 67%,#0000 0),        
+        linear-gradient( 45deg,#0000 8%,#54a6ff 0 17%, #0000 0 58%,#54a6ff 0 67%,#0000 0 83%,#54a6ff 0 92%,#0000 0),
+        rgba(84, 167, 255, 0.86);
+  background-size: 200px 200px;
+  
+  
+
+        img {
+            bottom: -1rem;
+            right: -2rem;
+        }
+    }
+
+
+}

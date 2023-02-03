@@ -2,3 +2,13 @@ $primary:#3563E9;
 $bgColor:#F6F7F9;
 $textPrimary:#1A202C;        
 $textSecundary:#90A3BF;        
+
+@mixin button {
+    background: $primary;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+    padding: .5rem 1.6rem;
+    cursor: pointer;
+}

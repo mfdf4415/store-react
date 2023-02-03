@@ -1,0 +1,65 @@
+.bunner {
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.ads {
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.ads div {
+  position: relative;
+  padding: 4rem 3rem;
+  width: 100%;
+  border-radius: 10px;
+  height: 36rem;
+  flex: 1 1 40rem;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 2rem;
+  overflow: hidden;
+}
+.ads div h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 150%;
+}
+.ads div p {
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 600;
+  line-height: 150%;
+}
+.ads div button {
+  background: #3563E9;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 0.5rem 1.6rem;
+  cursor: pointer;
+}
+.ads div img {
+  width: 30rem;
+  position: absolute;
+}
+.ads div:first-child {
+  background-image: repeating-radial-gradient(circle at 0 0, transparent 0, rgba(255, 255, 255, 0.09) 46px), repeating-linear-gradient(#54a6ff, #54a6ff);
+  background-color: rgba(255, 255, 255, 0.09);
+}
+.ads div:first-child img {
+  top: 5rem;
+  right: 3rem;
+}
+.ads div:last-child {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 20.5%, #54a6ff 0 29.5%, rgba(0, 0, 0, 0) 0) 0 50px, linear-gradient(45deg, rgba(0, 0, 0, 0) 8%, #54a6ff 0 17%, rgba(0, 0, 0, 0) 0 58%) 100px 0, linear-gradient(135deg, rgba(0, 0, 0, 0) 8%, #54a6ff 0 17%, rgba(0, 0, 0, 0) 0 58%, #54a6ff 0 67%, rgba(0, 0, 0, 0) 0), linear-gradient(45deg, rgba(0, 0, 0, 0) 8%, #54a6ff 0 17%, rgba(0, 0, 0, 0) 0 58%, #54a6ff 0 67%, rgba(0, 0, 0, 0) 0 83%, #54a6ff 0 92%, rgba(0, 0, 0, 0) 0), rgba(84, 167, 255, 0.86);
+  background-size: 200px 200px;
+}
+.ads div:last-child img {
+  bottom: -1rem;
+  right: -2rem;
+}
+
+/*# sourceMappingURL=bunner.css.map */

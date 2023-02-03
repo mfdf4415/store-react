@@ -1,5 +1,7 @@
+import Bunnre from "../Components/Bunner";
+
 const HomePage = () => {
-    return ( <div>HomePage</div> )
+    return (<><Bunnre /></>)
 }
- 
+
 export default HomePage;
