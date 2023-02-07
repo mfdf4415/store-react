@@ -1,14 +1,22 @@
-$primary:#3563E9;
-$bgColor:#F6F7F9;
-$textPrimary:#1A202C;        
-$textSecundary:#90A3BF;        
+$primary: #3563E9;
+$bgColor: #F6F7F9;
+$textPrimary: #1A202C;
+$textSecundary: #90A3Bf;
 
 @mixin button {
-    background: $primary;
-    border-radius: 4px;
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #fff;
-    padding: .5rem 1.6rem;
-    cursor: pointer;
+  background: $primary;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
+
+@mixin productList {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-auto-rows: 35rem;
+  gap: 3rem;
 }

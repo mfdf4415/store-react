@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+.pop-container{
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 2rem;
+    button{
+        @include button;
+        align-self: center
+    }
+}
+
+.prd-list {
+@include productList;
+}
+.pop-title {
+    color: $textSecundary;
+    font-size: 1.2rem;
+    font-weight: 600;
+}

@@ -1,0 +1,53 @@
+@import "./variables.scss";
+
+.product {
+    background-color: #fff;
+    border-radius: 10px;
+    padding:2rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.prd-top {
+    a {
+        h2{
+            color: $textPrimary;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: .5rem;
+        }
+        h4 {
+            color: $textSecundary;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.prd-img-container {
+    img {
+        width: 100%;
+        border-radius: 6px;
+        margin-bottom: .5rem;
+        height: 18rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    p{
+        color: $textSecundary;
+        font-size: 1.2rem;
+    }
+}
+
+.prd-bottom {
+    justify-content: space-between;
+    .price {
+        color: $textPrimary;
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+    button {
+        @include button;
+    }
+}

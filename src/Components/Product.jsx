@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import "../Styles/css/product.css";
+import img from "../resource/pink-sweater-front-removebg-preview.png"
 
 const Product = () => {
   return (
@@ -12,10 +14,12 @@ const Product = () => {
         </Link>
       </div>
       <div className="prd-img-container">
-        <div className="img"></div>
-        <p>2022 23 456</p>
+        <img
+          src={img}
+        />
+        <p>2023-02-06T11:38:35.000Z</p>
       </div>
-      <div className="prd-bottom">
+      <div className="prd-bottom flex">
         <h3 className="price">$80.00/</h3>
         <button>Rent Now</button>
       </div>

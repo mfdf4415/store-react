@@ -1,3 +1,53 @@
+.product {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.prd-top a h2 {
+  color: #1A202C;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.prd-top a h4 {
+  color: #90A3Bf;
+  font-size: 1.2rem;
+}
+
+.prd-img-container img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  height: 18rem;
+  object-fit: cover;
+  object-position: center;
+}
+.prd-img-container p {
+  color: #90A3Bf;
+  font-size: 1.2rem;
+}
+
+.prd-bottom {
+  justify-content: space-between;
+}
+.prd-bottom .price {
+  color: #1A202C;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.prd-bottom button {
+  background: #3563E9;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=product.css.map */
