@@ -1,0 +1,66 @@
+.load-product {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(0deg, 0%, 100%);
+  }
+  100% {
+    background-color: hsl(217deg, 27%, 90%);
+  }
+}
+.load-title {
+  width: 10rem;
+  background: #85A8F8;
+  height: 1.6rem;
+  border-radius: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.load-category {
+  width: 10rem;
+  background: #EFF3FD;
+  height: 1.6rem;
+  border-radius: 20px;
+}
+
+.load-img {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  height: 18rem;
+}
+.load-img svg {
+  font-size: 5rem;
+  color: #85A8F8;
+}
+
+.load-creation {
+  width: 15rem;
+  background: #EFF3FD;
+  height: 1.6rem;
+  border-radius: 20px;
+}
+
+.load-price {
+  width: 10rem;
+  background: #85A8F8;
+  height: 1.6rem;
+  border-radius: 20px;
+}
+
+.load-btn {
+  background: #3563E9;
+  width: 10rem;
+  height: 3.5rem;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=loadingProduct.css.map */

@@ -1,0 +1,67 @@
+@import "./variables.scss";
+
+.load-product {
+    background-color: #fff;
+    border-radius: 10px;
+    padding:2rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+    0% {
+      background-color: hsl(0, 0%, 100%);
+    }
+    100% {
+      background-color: hsl(217, 27%, 90%);
+    }
+  }
+
+.load-title {
+    width: 10rem;
+    background: $loadPrimary;
+    height: 1.6rem;
+    border-radius: 20px;
+    margin-bottom: .5rem;
+}
+
+.load-category{
+    width: 10rem;
+    background: $loadSecundary;
+    height: 1.6rem;
+    border-radius: 20px;
+}
+
+.load-img {
+    width: 100%;
+    margin-bottom: .5rem;
+    height: 18rem;
+    svg {
+        font-size: 5rem;
+        color: $loadPrimary;
+    }
+}
+
+.load-creation {
+    width: 15rem;
+    background: $loadSecundary;
+    height: 1.6rem;
+    border-radius: 20px;
+}
+
+.load-price{
+    width: 10rem;
+    background: $loadPrimary;
+    height: 1.6rem;
+    border-radius: 20px;
+}
+
+.load-btn {
+    background: $primary;
+    width: 10rem;
+    height: 3.5rem;
+    border-radius: 10px;
+}
