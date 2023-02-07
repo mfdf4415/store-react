@@ -1,0 +1,10 @@
+.err-container {
+  padding: 2rem;
+}
+.err-container p {
+  color: #DB2719;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=error.css.map */

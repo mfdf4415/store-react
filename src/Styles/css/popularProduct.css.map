@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../sass/popularProduct.scss","../sass/variables.scss"],"names":[],"mappings":"AAEA;EACA;EACA;EACA;EACA;;AACI;ECCF,YARQ;EASR;EACA;EACA;EACA;EACA;EACA;EDLM;;;AAIR;ECKE;EACA;EACA;EACA;EACA;;;ADNF;EACI,OCdY;EDeZ;EACA","file":"popularProduct.css"}
+{"version":3,"sourceRoot":"","sources":["../sass/popularProduct.scss","../sass/variables.scss"],"names":[],"mappings":"AAEA;EACA;EACA;EACA;EACA;;AACI;ECEF,YATQ;EAUR;EACA;EACA;EACA;EACA;EACA;EDNM;;;AAIR;ECME;EACA;EACA;EACA;EACA;;;ADPF;EACI,OCdY;EDeZ;EACA","file":"popularProduct.css"}
