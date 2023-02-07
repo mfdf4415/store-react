@@ -1,5 +1,8 @@
 import Bunnre from "../Components/Bunner";
 import Product from "../Components/Product";
+import LoadingProduct from "../Components/LoadingProduct"
+import Error from "../Components/Common/Error"
+import useFetch from "../hooks/useFetch";
 import "../Styles/css/popularProduct.css"
 
 const HomePage = () => {
@@ -8,22 +11,37 @@ const HomePage = () => {
 
 export default HomePage;
 
-
 const PopularProduct = () => {
-    return (
-        <div className="pop-container flex">
-            <p className="pop-title">Popular Product</p>
-            <div className="prd-list">
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
-                <Product />
+    const { data, error, loading } = useFetch("/products?offset=0&limit=12")
+
+    const renderPopular = () => {
+        let renderd;
+        if (error) {
+            renderd = <Error message={error.message} />
+        }
+        if (loading) {
+            renderd = <div className="pop-container flex">
+                <p className="pop-title">Popular Product</p>
+                <div className="prd-list">
+                    loading.....
+                </div>
+                <button>View All Product</button>
             </div>
-            <button>View All Product</button>
-        </div>
-    );
+
+        }
+        if (data) {
+            renderd = <div className="pop-container flex">
+                <p className="pop-title">Popular Product</p>
+                <div className="prd-list">
+                    {data.map(product => <Product id={product.id} product={product} />)}
+                </div>
+                <button>View All Product</button>
+            </div>
+
+        }
+        return renderd
+    }
+
+    return (renderPopular());
 }
 
