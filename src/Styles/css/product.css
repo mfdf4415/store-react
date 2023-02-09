@@ -1,13 +1,15 @@
 .product {
   background-color: #fff;
   border-radius: 10px;
-  padding: 2rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.prd-top {
+  padding: 0 1rem;
+}
 .prd-top a h2 {
   color: #1A202C;
   font-size: 1.8rem;
@@ -19,20 +21,27 @@
   font-size: 1.2rem;
 }
 
+.prd-img-container {
+  position: relative;
+}
 .prd-img-container img {
   width: 100%;
-  border-radius: 6px;
   margin-bottom: 0.5rem;
-  height: 18rem;
+  height: 20rem;
   object-fit: cover;
   object-position: center;
 }
 .prd-img-container p {
-  color: #90A3Bf;
+  color: #fff;
   font-size: 1.2rem;
+  position: absolute;
+  top: 8rem;
+  left: -7rem;
+  transform: rotate(90deg);
 }
 
 .prd-bottom {
+  padding: 1rem;
   justify-content: space-between;
 }
 .prd-bottom .price {
