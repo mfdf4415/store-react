@@ -17,19 +17,32 @@ const PopularProduct = () => {
     const renderPopular = () => {
         let renderd;
         if (error) {
-            renderd = <Error message={error.message} />
+            renderd = <div className="pop-container flex">
+                <Error message={error} />
+            </div>
         }
-        if (loading) {
+        else if (loading) {
             renderd = <div className="pop-container flex">
                 <p className="pop-title">Popular Product</p>
                 <div className="prd-list">
-                    loading.....
+                    <LoadingProduct/>
+                    <LoadingProduct/>
+                    <LoadingProduct/>
+                    <LoadingProduct/>
+                    <LoadingProduct/>
+                    <LoadingProduct/>
+                    <LoadingProduct/>
+                    <LoadingProduct/>
+                    <LoadingProduct/>
+                    <LoadingProduct/>
+                    <LoadingProduct/>
+                    <LoadingProduct/>
                 </div>
                 <button>View All Product</button>
             </div>
 
         }
-        if (data) {
+        else if (data) {
             renderd = <div className="pop-container flex">
                 <p className="pop-title">Popular Product</p>
                 <div className="prd-list">
